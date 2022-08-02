@@ -11,7 +11,8 @@
                     <li>
                         <a href="/admin/dashboard">
                             <i class="ti-dashboard"></i>
-                            <span class="menu-text">Dashboard {{ Auth::user()->user_type }}</span>
+                            <span class="menu-text">Dashboard
+                                {{ Auth::user()->user_type == 1 ? 'true' : 'false' }}</span>
                         </a>
                     </li>
                 @endif
