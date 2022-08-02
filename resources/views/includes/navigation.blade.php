@@ -11,8 +11,7 @@
                     <li>
                         <a href="/admin/dashboard">
                             <i class="ti-dashboard"></i>
-                            <span class="menu-text">Dashboard
-                                {{ Auth::user()->user_type == 1 ? 'true' : 'false' }}</span>
+                            <span class="menu-text">Dashboard</span>
                         </a>
                     </li>
                 @endif
@@ -20,8 +19,7 @@
                     <li>
                         <a href="/fund_manager/dashboard">
                             <i class="ti-dashboard"></i>
-                            <span class="menu-text">Dashboard
-                                {{ Auth::user()->user_type == 2 ? 'true' : 'false' }}</span>
+                            <span class="menu-text">Dashboard</span>
                         </a>
                     </li>
                 @endif
@@ -29,8 +27,7 @@
                     <li>
                         <a href="/transaction_recorder/dashboard">
                             <i class="ti-dashboard"></i>
-                            <span class="menu-text">Dashboard
-                                {{ Auth::user()->user_type == 3 ? 'true' : 'false' }}</span>
+                            <span class="menu-text">Dashboard</span>
                         </a>
                     </li>
                 @endif
