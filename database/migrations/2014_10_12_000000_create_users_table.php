@@ -17,8 +17,8 @@ return new class extends Migration
             $table->id();
             $table->string('employee_id');
             $table->string('fullname');
-            $table->boolean('user_type');
-            $table->boolean('status');
+            $table->integer('user_type');
+            $table->integer('status');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
