@@ -13,7 +13,7 @@
         content="bootstrap, admin theme, admin dashboard, jquery, webpack, laravel-mix, template, responsive" />
     <meta name="author" content="siQuang - Simon Nguyen" />
 
-    <title>siQtheme - Form Control</title>
+    <title>X and C Building Construction | Login</title>
 
     <link rel="stylesheet" href="assets/css/siqtheme.css">
 
