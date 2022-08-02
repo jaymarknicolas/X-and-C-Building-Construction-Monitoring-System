@@ -7,7 +7,7 @@
                 <li class="header-menu">
                     Categories
                 </li>
-                @if (Auth()->user()->user_type == 1)
+                @if (Auth::user()->user_type == 1)
                     <li>
                         <a href="/admin/home">
                             <i class="ti-dashboard"></i>
@@ -15,7 +15,7 @@
                         </a>
                     </li>
                 @endif
-                @if (Auth()->user()->user_type == 2)
+                @if (Auth::user()->user_type == 2)
                     <li>
                         <a href="/fund_manager/dashboard">
                             <i class="ti-dashboard"></i>
@@ -23,7 +23,7 @@
                         </a>
                     </li>
                 @endif
-                @if (Auth()->user()->user_type == 3)
+                @if (Auth::user()->user_type == 3)
                     <li>
                         <a href="/transaction_recorder/dashboard">
                             <i class="ti-dashboard"></i>
@@ -31,7 +31,7 @@
                         </a>
                     </li>
                 @endif
-                @if (Auth()->user()->user_type == 1)
+                @if (Auth::user()->user_type == 1)
                     <li class="maincat">
                         <a href="#">
                             <i class="fa fa-user-o"></i>
@@ -50,7 +50,7 @@
                     </li>
                 @endif
 
-                @if (Auth()->user()->user_type == 1)
+                @if (Auth::user()->user_type == 1)
                     <li
                         class="maincat  {{ request()->is('admin/projects') || request()->is('admin/projects/create') || request()->is('admin/projects/*/edit') ? 'active' : '' }}">
                         <a href="#">
@@ -71,7 +71,7 @@
                     </li>
                 @endif
 
-                @if (Auth()->user()->user_type == 2)
+                @if (Auth::user()->user_type == 2)
                     <li
                         class="maincat  {{ request()->is('fund_manager/projects') || request()->is('fund_manager/projects/create') || request()->is('fund_manager/projects/*/edit') ? 'active' : '' }}">
                         <a href="#">
@@ -92,7 +92,7 @@
                     </li>
                 @endif
 
-                @if (Auth()->user()->user_type == 1)
+                @if (Auth::user()->user_type == 1)
                     <li
                         class="maincat {{ request()->is('/admin/purchases') || request()->is('/admin/purchases/create') || request()->is('/admin/purchases/*/edit') ? 'active' : '' }}">
                         <a href="#">
@@ -113,7 +113,7 @@
                     </li>
                 @endif
 
-                @if (Auth()->user()->user_type == 3)
+                @if (Auth::user()->user_type == 3)
                     <li
                         class="maincat {{ request()->is('/transaction_recorder/purchases') || request()->is('/transaction_recorder/purchases/create') || request()->is('/transaction_recorder/purchases/*/edit') ? 'active' : '' }}">
                         <a href="#">
@@ -136,7 +136,7 @@
                 @endif
 
 
-                @if (Auth()->user()->user_type == 1)
+                @if (Auth::user()->user_type == 1)
                     <li
                         class="maincat {{ request()->is('/admin/cheques') || request()->is('/admin/cheques/create') || request()->is('/admin/cheques/*/edit') ? 'active' : '' }}"">
                         <a href="#">
@@ -157,7 +157,7 @@
                     </li>
                 @endif
 
-                @if (Auth()->user()->user_type == 2)
+                @if (Auth::user()->user_type == 2)
                     <li
                         class="maincat {{ request()->is('/fund_manager/cheques') || request()->is('/fund_manager/cheques/create') || request()->is('/fund_manager/cheques/*/edit') ? 'active' : '' }}"">
                         <a href="#">
@@ -178,7 +178,7 @@
                     </li>
                 @endif
 
-                @if (Auth()->user()->user_type == 1)
+                @if (Auth::user()->user_type == 1)
                     <li class="active">
                         <a href="/admin/logs">
                             <i class="fa fa-line-chart"></i>
@@ -186,7 +186,7 @@
                         </a>
                     </li>
                 @endif
-                @if (Auth()->user()->user_type == 2)
+                @if (Auth::user()->user_type == 2)
                     <li class="active">
                         <a href="/fund_manager/logs">
                             <i class="fa fa-line-chart"></i>
@@ -194,7 +194,7 @@
                         </a>
                     </li>
                 @endif
-                @if (Auth()->user()->user_type == 3)
+                @if (Auth::user()->user_type == 3)
                     <li class="active">
                         <a href="/transaction_recorder/logs">
                             <i class="fa fa-line-chart"></i>
