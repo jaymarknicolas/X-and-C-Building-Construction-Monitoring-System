@@ -9,9 +9,9 @@
                 </li>
                 @if (Auth::user()->user_type == 1)
                     <li>
-                        <a href="/admin/home">
+                        <a href="/admin/dashboard">
                             <i class="ti-dashboard"></i>
-                            <span class="menu-text">Dashboard</span>
+                            <span class="menu-text">Dashboard {{ Auth::user()->user_type }}</span>
                         </a>
                     </li>
                 @endif
