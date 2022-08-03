@@ -111,7 +111,7 @@
                                     times both nationally and globally, for their renowned excellence, quality,
                                     performance and reliability in all types of constructions.
                                 </p> --}}
-                                <div data-animation-in="slideInLeft">
+                                <div data-animation-in="slideInLeft" style="display: flex; justify-content:center;">
                                     <a href="{{ route('login') }}" class="slider btn btn-primary border"
                                         aria-label="learn-more-about-us">Login</a>
                                 </div>
