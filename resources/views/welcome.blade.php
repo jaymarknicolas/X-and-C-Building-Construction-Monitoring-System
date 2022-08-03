@@ -66,6 +66,14 @@
                                     <li>
                                         <div class="info-box">
                                             <div class="info-box-content">
+                                                <p class="info-box-title">Contact Us</p>
+                                                <p class="info-box-subtitle">+63 917-7700-019</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="info-box">
+                                            <div class="info-box-content">
                                                 <p class="info-box-title">Email Us</p>
                                                 <p class="info-box-subtitle">jakedoydora@rocketmail.com</p>
                                             </div>
@@ -89,7 +97,7 @@
                     <div class="container h-100">
                         <div class="row align-items-center h-100">
                             <div class="col-md-12">
-                                <h2 class="slide-title fw-bold" data-animation-in="slideInDown">Welcome!</h2>
+                                {{-- <h2 class="slide-title fw-bold" data-animation-in="slideInDown">Welcome!</h2> --}}
                                 {{-- <h3 class="slide-sub-title" data-animation-in="fadeIn">We believe sustainability</h3> --}}
                                 {{-- <p class="slider-description lead" data-animation-in="slideInRight">
                                     To Become the Leading Construction company, while delivering Projects that
