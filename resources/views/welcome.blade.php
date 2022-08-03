@@ -66,24 +66,8 @@
                                     <li>
                                         <div class="info-box">
                                             <div class="info-box-content">
-                                                <p class="info-box-title">Call Us</p>
-                                                <p class="info-box-subtitle">(+9) 847-291-4353</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="info-box">
-                                            <div class="info-box-content">
                                                 <p class="info-box-title">Email Us</p>
-                                                <p class="info-box-subtitle">office@Constra.com</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="last">
-                                        <div class="info-box last">
-                                            <div class="info-box-content">
-                                                <p class="info-box-title">Global Certificate</p>
-                                                <p class="info-box-subtitle">ISO 9001:2017</p>
+                                                <p class="info-box-subtitle">jakedoydora@rocketmail.com</p>
                                             </div>
                                         </div>
                                     </li>
@@ -105,10 +89,20 @@
                     <div class="container h-100">
                         <div class="row align-items-center h-100">
                             <div class="col-md-12">
-                                <h2 class="slide-title" data-animation-in="slideInDown">Meet Our Engineers</h2>
-                                <h3 class="slide-sub-title" data-animation-in="fadeIn">We believe sustainability</h3>
-                                <p class="slider-description lead" data-animation-in="slideInRight">We will deal with
-                                    your failure that determines how you achieve success.</p>
+                                <h2 class="slide-title" data-animation-in="slideInDown">Company Mission</h2>
+                                {{-- <h3 class="slide-sub-title" data-animation-in="fadeIn">We believe sustainability</h3> --}}
+                                <p class="slider-description lead" data-animation-in="slideInRight">
+                                    To Become the Leading Construction company, while delivering Projects that
+                                    consistently
+                                    exceed international standards and provide exceptional customer satisfaction. To
+                                    deliver excellent value
+                                    and innovative construction solutions to meet our client’s requirements. Using
+                                    Modern principles and
+                                    sophisticated technologies, X and C Building Construction envisions being the
+                                    primary preferences at all
+                                    times both nationally and globally, for their renowned excellence, quality,
+                                    performance and reliability in all types of constructions.
+                                </p>
                                 <div data-animation-in="slideInLeft">
                                     <a href="{{ route('login') }}" class="slider btn btn-primary border"
                                         aria-label="learn-more-about-us">Login</a>
