@@ -84,7 +84,7 @@
 
         <div class="banner-carousel banner-carousel-1 mb-0">
             <div class="banner-carousel-item"
-                style="background-image:url({{ asset('construction/images/slider-main/bg3.jpg') }})">
+                style="background-image:url({{ asset('construction/images/slider-main/bg3xyconstruction.jpg') }})">
                 <div class="slider-content text-right" style="background-color: #000000ab;">
                     <div class="container h-100">
                         <div class="row align-items-center h-100">
