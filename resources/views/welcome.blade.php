@@ -85,13 +85,13 @@
         <div class="banner-carousel banner-carousel-1 mb-0">
             <div class="banner-carousel-item"
                 style="background-image:url({{ asset('construction/images/slider-main/bg3.jpg') }})">
-                <div class="slider-content text-right">
+                <div class="slider-content text-right" style="background-color: #000000ab;">
                     <div class="container h-100">
                         <div class="row align-items-center h-100">
                             <div class="col-md-12">
-                                <h2 class="slide-title" data-animation-in="slideInDown">Company Mission</h2>
+                                <h2 class="slide-title fw-bold" data-animation-in="slideInDown">Welcome!</h2>
                                 {{-- <h3 class="slide-sub-title" data-animation-in="fadeIn">We believe sustainability</h3> --}}
-                                <p class="slider-description lead" data-animation-in="slideInRight">
+                                {{-- <p class="slider-description lead" data-animation-in="slideInRight">
                                     To Become the Leading Construction company, while delivering Projects that
                                     consistently
                                     exceed international standards and provide exceptional customer satisfaction. To
@@ -102,7 +102,7 @@
                                     primary preferences at all
                                     times both nationally and globally, for their renowned excellence, quality,
                                     performance and reliability in all types of constructions.
-                                </p>
+                                </p> --}}
                                 <div data-animation-in="slideInLeft">
                                     <a href="{{ route('login') }}" class="slider btn btn-primary border"
                                         aria-label="learn-more-about-us">Login</a>
