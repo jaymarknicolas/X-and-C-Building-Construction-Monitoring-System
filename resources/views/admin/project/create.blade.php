@@ -34,7 +34,7 @@
             </div>
             <div class="input-group col-md-6 pr-5 mx-0 mt-5 mb-2 offset-md-3">
                 <div class="input-group-prepend">
-                    <span class="input-group-text">Name</span>
+                    <span class="input-group-text">Project Name</span>
                 </div>
                 <input id="project_name" type="text" class="form-control @error('project_name') is-invalid @enderror"
                     name="project_name" value="{{ old('project_name') }}" required autocomplete="project_name" autofocus>
@@ -79,31 +79,36 @@
         </div>
 
         <div class="form-group row mb-3">
-            <label class="col-md-12 px-5 col-form-label">Date Range</label>
             <div class="col-md-12 px-5 ">
                 <div class="input-group daterange">
+                    <div class="input-group-append">
+                        <span class="input-group-text">Project Start</span>
+                    </div>
                     <input id="project_start" type="date"
                         class="form-control @error('project_start') is-invalid @enderror" name="project_start"
                         value="{{ old('project_start') }}" required autocomplete="project_start" autofocus>
 
 
                     <div class="input-group-append">
-                        <span class="input-group-text">to</span>
+                        <span class="input-group-text">Duration</span>
                     </div>
-                    <input id="project_eta" type="date" class="form-control @error('project_eta') is-invalid @enderror"
-                        name="project_eta" value="{{ old('project_eta') }}" required autocomplete="project_eta" autofocus>
+                    <input id="duration" type="text" class="form-control @error('duration') is-invalid @enderror"
+                        name="duration" value="{{ old('duration') }}" required autocomplete="duration" autofocus>
 
                 </div>
             </div>
         </div>
 
-        <div class="form-group row mt-3 pl-2">
+        <div class="form-group row mt-3 mb-0 pl-2">
 
 
-            <div class="input-group col-md-6 pl-4 mx-auto mb-3 offset-md-3">
-                <label class="col-md-12 col-form-label">Project's Awarding Date</label>
+            <div class="input-group col-md-6 pl-4 mx-auto mb-1 offset-md-3">
+
                 <div class="col-md-12">
                     <div class="input-group date">
+                        <div class="input-group-append">
+                            <span class="input-group-text">Project's Awarding Date</span>
+                        </div>
                         <input id="project_name" type="date"
                             class="form-control @error('project_awarding') is-invalid @enderror" name="project_awarding"
                             value="{{ old('project_awarding') }}" required autocomplete="project_awarding" autofocus>
@@ -114,12 +119,10 @@
                             </span>
                         </div>
                     </div>
-                    <span class="form-text text-muted">Select Date</span>
                 </div>
             </div>
 
-            <div class="input-group col-md-6 mx-auto mb-3 offset-md-3">
-                <label class="col-md-12 col-form-label">Project's Budget</label>
+            <div class="input-group col-md-6 mx-auto mb-1 offset-md-3">
                 <div class="col-md-12 pl-0">
                     <div class="input-group date">
                         <div class="input-group col-md-12 m-0 pl-0 mb-3 offset-md-3">
@@ -162,9 +165,8 @@
         </div>
 
         <div class="form-group row">
-            <label class="col-md-12 px-5 mx-auto col-form-label">Description</label>
             <div class="col-md-12 px-5 mx-auto">
-                <textarea name="description" class="form-control" rows="5" placeholder="..." required>{{ old('description') }}</textarea>
+                <textarea name="description" class="form-control" rows="5" placeholder="Description" required>{{ old('description') }}</textarea>
             </div>
         </div>
 

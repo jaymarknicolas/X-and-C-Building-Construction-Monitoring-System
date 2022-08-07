@@ -73,7 +73,7 @@ class AdminProjectController extends Controller
             'client_id' => 'required',
             'project_budget' => 'required',
             'project_start' => 'required',
-            'project_eta' => 'required',
+            'duration' => 'required',
             'project_awarding' => 'required',
             'status' => 'required',
             'user_id' => 'required',
@@ -88,7 +88,8 @@ class AdminProjectController extends Controller
         $project->client_id = $request->input('client_id');
         $project->project_budget = $request->input('project_budget');
         $project->project_start = date("Y-m-d", strtotime($request->input('project_start')));
-        $project->project_ETA = date("Y-m-d", strtotime($request->input('project_eta')));
+        $project->project_eta = date("Y-m-d", time());
+        $project->duration = $request->input('duration');
         $project->project_awarding = date("Y-m-d", strtotime($request->input('project_awarding')));
         $project->status = $request->input('status');
 
@@ -186,7 +187,7 @@ class AdminProjectController extends Controller
             'client_id' => 'required',
             'project_budget' => 'required',
             'project_start' => 'required',
-            'project_eta' => 'required',
+            'duration' => 'required',
             'project_awarding' => 'required',
             'status' => 'required',
             'user_id' => 'required',
@@ -201,7 +202,10 @@ class AdminProjectController extends Controller
         $project->client_id = $request->input('client_id');
         $project->project_budget = $request->input('project_budget');
         $project->project_start = date("Y-m-d", strtotime($request->input('project_start')));
-        $project->project_ETA = date("Y-m-d", strtotime($request->input('project_eta')));
+        $project->duration = $request->input('duration');
+                $project->project_eta = date("Y-m-d", time());
+
+
         $project->project_awarding = date("Y-m-d", strtotime($request->input('project_awarding')));
         $project->status = $request->input('status');
 

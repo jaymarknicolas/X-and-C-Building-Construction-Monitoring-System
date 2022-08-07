@@ -194,7 +194,8 @@
         text-align: center;
     ">
         ({{ count($projectStart) > 0 ? date('F d, Y', strtotime($projectStart[0]->project_start)) : 'Nan' }} -
-        {{ count($projectEnd) > 0 ? date('F d, Y', strtotime($projectEnd[0]->project_ETA)) : 'Nan' }})</h3>
+        {{ count($projectStart) > 0 ? date('F d, Y', strtotime($projectStart[count($projectStart) - 1]->project_start)) : 'Nan' }})
+    </h3>
     <main>
         <h3 style="border-top: 2px solid #000; padding-top: 0.5rem;"></h3>
         <table style="width: 100%;  border-bottom: 2px solid; ">
@@ -214,8 +215,8 @@
                         <tr>
                             <td>{{ $projects[$i]->id }}</td>
                             <td>{{ $projects[$i]->project_name }}</td>
-                            <td>{{ date('F d, Y', strtotime($projects[$i]->project_start)) }} -
-                                {{ date('F d, Y', strtotime($projects[$i]->project_ETA)) }}</td>
+                            <td>{{ date('F d, Y', strtotime($projects[$i]->project_start)) }},
+                                {{ $projects[$i]->duration }}</td>
                             <td>PHP {{ number_format($projects[$i]->project_budget) }}</td>
                             <td>PHP {{ number_format($expenses[$i]) }}</td>
                             <td>PHP {{ number_format($profits[$i]) }}</td>

@@ -54,7 +54,7 @@
                                             <th class="sorting text-uppercase" tabindex="0" aria-controls="dt-addrows"
                                                 rowspan="1" colspan="1"
                                                 aria-label="Column 3: activate to sort column ascending"
-                                                style="width: 150.609px;">client name</th>
+                                                style="width: 150.609px;">duration</th>
                                             <th class="sorting text-uppercase" tabindex="0" aria-controls="dt-addrows"
                                                 rowspan="1" colspan="1"
                                                 aria-label="Column 3: activate to sort column ascending"
@@ -77,7 +77,7 @@
                                                 <td>{{ $project->project_number }}</td>
                                                 <td>{{ $project->project_name }}</td>
                                                 <td>{{ $project->location }}</td>
-                                                <td>{{ $project->client->client_name }}</td>
+                                                <td>{{ $project->duration }}</td>
                                                 <td class="text-right">₱{{ number_format($project->project_budget) }}</td>
                                                 <td>
                                                     {{ $project->status == 1 ? 'on going' : '' }}

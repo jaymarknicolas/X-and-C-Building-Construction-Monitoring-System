@@ -49,19 +49,27 @@
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <h5 class="card-title fs-4 fw-normal"> #:</h5>
+                                                <h5 class="card-title fs-5 fw-bold"> Project Number:</h5>
                                             </td>
                                             <td>
-                                                <h5>{{ $project->project_number }}</h5>
+                                                <h5 class="fs-5">{{ $project->project_number }}</h5>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <p class="fs-5"><span class="fw-bold">Range:</p>
+                                                <p class="fs-5"><span class="fw-bold">Project Start:</p>
                                             </td>
                                             <td>
-                                                <p>{{ date('F d, Y', strtotime($project->project_start)) }} -
-                                                    {{ date('F d, Y', strtotime($project->project_ETA)) }}</p>
+                                                <p class="fs-5">{{ date('F d, Y', strtotime($project->project_start)) }}
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="fs-5"><span class="fw-bold">Duration:</p>
+                                            </td>
+                                            <td>
+                                                <p class="fs-5">{{ $project->duration }}</p>
                                             </td>
                                         </tr>
                                         <tr>
@@ -75,11 +83,11 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                <p class="card-text"><span class="fw-bold">Description: </span>
+                                                <p class="card-text"><span class="fw-bold fs-5">Description: </span>
                                                 </p>
                                             </td>
                                             <td>
-                                                <p class="card-text">
+                                                <p class="card-text fs-5">
                                                     {{ $project->description }}
                                                 </p>
                                             </td>
