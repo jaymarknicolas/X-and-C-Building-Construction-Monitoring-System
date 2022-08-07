@@ -165,7 +165,7 @@
 
             <div class="form-group row">
                 <div class="col-md-12 px-5 mx-auto">
-                    <textarea name="description" class="form-control" rows="5" placeholder="Description" required>{{ old('description') }}</textarea>
+                    <textarea name="description" class="form-control" rows="5" placeholder="Description">{{ old('description') }}</textarea>
                 </div>
             </div>
 
