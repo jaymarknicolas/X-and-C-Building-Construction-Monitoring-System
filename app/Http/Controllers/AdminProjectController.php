@@ -88,7 +88,7 @@ class AdminProjectController extends Controller
         $project->client_id = $request->input('client_id');
         $project->project_budget = $request->input('project_budget');
         $project->project_start = date("Y-m-d", strtotime($request->input('project_start')));
-        $project->project_eta = date("Y-m-d", time());
+        $project->project_ETA = date("Y-m-d", time());
         $project->duration = $request->input('duration');
         $project->project_awarding = date("Y-m-d", strtotime($request->input('project_awarding')));
         $project->status = $request->input('status');
@@ -203,7 +203,7 @@ class AdminProjectController extends Controller
         $project->project_budget = $request->input('project_budget');
         $project->project_start = date("Y-m-d", strtotime($request->input('project_start')));
         $project->duration = $request->input('duration');
-                $project->project_eta = date("Y-m-d", time());
+                $project->project_ETA = date("Y-m-d", time());
 
 
         $project->project_awarding = date("Y-m-d", strtotime($request->input('project_awarding')));
