@@ -157,7 +157,7 @@
                     <span class="input-group-text">Status</span>
                 </div>
                 <select class="form-control" name="status">
-                    <option>Default Select</option>
+                    <option value="">Default Select</option>
                     <option value="2" {{ old('status') == 2 ? 'selected' : '' }}>Complete</option>
                     <option value="1"{{ old('status') == 1 ? 'selected' : '' }}>On Going</option>
                 </select>
