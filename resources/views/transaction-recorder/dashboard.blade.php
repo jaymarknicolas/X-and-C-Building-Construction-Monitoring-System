@@ -60,48 +60,9 @@
     </div> --}}
 
     <div class="row">
-        <!-- Employees Sales -->
-        <div class="col-md-6">
-            <div class="card mb-3">
-                <div class="card-header">
-                    <div class="caption">
-                        <i class="ti-user"></i> Employees
-                    </div>
-                </div>
-                <div class="card-body">
-
-                    <div class="row">
-                        <div class="col-md-12 scrollbox-md" data-simplebar>
-                            <div class="table-responsive">
-                                <table class="table table-bordered table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th>Employee Name</th>
-                                            <th class="text-right">Position</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        @if (count($employees) > 0)
-                                            @foreach ($employees as $employee)
-                                                <tr>
-                                                    <td scope="row">
-                                                        <a href="javascript:;">{{ $employee->employee_name }}</a>
-                                                    </td>
-                                                    <td class="text-right">{{ $employee->position }}</td>
-                                                </tr>
-                                            @endforeach
-                                        @endif
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!-- My Tasks -->
-        <div class="col-md-6">
+        <div class="col-md-12">
             <div class="card mb-3">
                 <div class="card-header">
                     <div class="caption">
@@ -111,8 +72,8 @@
                 <div class="card-body">
                     <div class="row py-3">
                         <div class="col-md-3 col-6 d-flex flex-column align-items-center">
-                            <h2 class="text-success bold">{{ count($inProgressProjects) }}</h2>
-                            In-Progress
+                            <h2 class="text-success bold text-warning">{{ count($inProgressProjects) }}</h2>
+                            On-going
                         </div>
                         <div class="col-md-3 col-6 d-flex flex-column align-items-center">
                             <h2 class="text-secondary bold">{{ count($completeProjects) }}</h2>
@@ -136,8 +97,7 @@
                                                 </div>
                                                 <div class="ml-auto text-right">
                                                     <div class="btn-group btn-group-sm">
-
-                                                        <button type="submit" class="btn btn-sm btn-success"><i
+                                                        <button type="submit" class="btn btn-sm btn-warning"><i
                                                                 class="ti-check"></i></button>
                                                         {{-- <a href="javascript:;" class="btn btn-sm btn-secondary"><i class="ti-trash"></i></a> --}}
                                                     </div>

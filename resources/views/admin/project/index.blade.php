@@ -80,8 +80,8 @@
                                                 <td>{{ $project->duration }}</td>
                                                 <td class="text-right">₱{{ number_format($project->project_budget) }}</td>
                                                 <td>
-                                                    {{ $project->status == 1 ? 'on going' : '' }}
-                                                    {{ $project->status == 2 ? 'completed' : '' }}
+                                                    {{ $project->status == 1 ? 'On-going' : '' }}
+                                                    {{ $project->status == 2 ? 'Completed' : '' }}
                                                 </td>
                                                 <td class="">
                                                     <a href="/admin/projects/{{ $project->id }}" class="p-0"><i
