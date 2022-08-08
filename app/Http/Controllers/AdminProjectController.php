@@ -98,6 +98,10 @@ class AdminProjectController extends Controller
             $project->description = 'N/A';
         }
         else {
+            $this->validate($request, [
+                'description' => 'required'
+            ]);
+            
             $project->description = $request->input('description');
         }
 
