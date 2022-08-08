@@ -2,25 +2,10 @@
 <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-
-        @if (Auth::user()->user_type == 1)
-            <a href="/admin/dashboard" class="logo d-flex align-items-center">
-                <img src="{{ asset('img/logo.png') }}" alt="">
-                <span class="d-none d-lg-block text-light">X and C Building Construction</span>
-            </a>
-        @endif
-        @if (Auth::user()->user_type == 2)
-            <a href="/fund_manager/dashboard" class="logo d-flex align-items-center">
-                <img src="{{ asset('img/logo.png') }}" alt="">
-                <span class="d-none d-lg-block text-light">X and C Building Construction</span>
-            </a>
-        @endif
-        @if (Auth::user()->user_type == 3)
-            <a href="/transaction_recorder/dashboard" class="logo d-flex align-items-center">
-                <img src="{{ asset('img/logo.png') }}" alt="">
-                <span class="d-none d-lg-block text-light">X and C Building Construction</span>
-            </a>
-        @endif
+        <a href="/admin/home" class="logo d-flex align-items-center">
+            <img src="{{ asset('img/logo.png') }}" alt="">
+            <span class="d-none d-lg-block text-light">X and C Building Construction</span>
+        </a>
         <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
 

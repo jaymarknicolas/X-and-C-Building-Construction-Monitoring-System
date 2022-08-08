@@ -32,10 +32,26 @@
         <div class="header">
             <div class="header-bar">
                 <div class="brand">
-                    <a href="/admin/home" class="logo d-flex">
-                        <img src="{{ asset('assets/img/favicon.png') }}" class="img-fluid w-25 h-25" alt="">
-                        <span class="mt-3 text-light" style="font-size: 1rem;">X and C Building Construction</span></a>
+                    @if (Auth::user()->user_type == 1)
+                        <a href="/admin/dashboard" class="logo d-flex">
+                            <img src="{{ asset('assets/img/favicon.png') }}" class="img-fluid w-25 h-25" alt="">
+                            <span class="mt-3 text-light" style="font-size: 1rem;">X and C Building
+                                Construction</span></a>
+                    @endif
+                    @if (Auth::user()->user_type == 2)
+                        <a href="/fund_manager/dashboard" class="logo d-flex">
+                            <img src="{{ asset('assets/img/favicon.png') }}" class="img-fluid w-25 h-25" alt="">
+                            <span class="mt-3 text-light" style="font-size: 1rem;">X and C Building
+                                Construction</span></a>
+                    @endif
+                    @if (Auth::user()->user_type == 3)
+                        <a href="/transaction_recorder/dashboard" class="logo d-flex">
+                            <img src="{{ asset('assets/img/favicon.png') }}" class="img-fluid w-25 h-25" alt="">
+                            <span class="mt-3 text-light" style="font-size: 1rem;">X and C Building
+                                Construction</span></a>
+                    @endif
                 </div>
+
                 <div class="btn-toggle">
                     <!-- <a href="#" class="toggle-sidebar-btn"><i class="ti-arrow-circle-left"></i></a> -->
                     <a href="#" class="slide-sidebar-btn" style="display: none;"><i class="ti-menu"></i></a>
