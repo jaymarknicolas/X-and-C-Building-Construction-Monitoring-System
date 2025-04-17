@@ -1,0 +1,20 @@
+# Automatically normalize line endings for all text files
+* text=auto
+
+# Treat .afm font files as binary to avoid line-ending changes
+*.afm binary
+
+# Treat all files in the vendor directory as binary to avoid line-ending changes
+/vendor/* binary
+
+# Enable diffing for common file types
+*.blade.php diff=html
+*.css diff=css
+*.html diff=html
+*.md diff=markdown
+*.php diff=php
+
+# Exclude specific files from export in archives
+/.github export-ignore
+CHANGELOG.md export-ignore
+.styleci.yml export-ignore
